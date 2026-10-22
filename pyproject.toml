@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "sqlite-playground"
+version = "1.0.0"
+description = "A transactional SQLite task notebook"
+requires-python = ">=3.11"
+dependencies = []
+[project.scripts]
+sqlite-playground = "sqlite_playground:main"
+[tool.setuptools]
+py-modules = ["sqlite_playground"]
